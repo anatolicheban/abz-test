@@ -9,7 +9,7 @@ const Header = () => {
       <Container paddings>
         <div className="header__inner">
           <a className="header__logo" href="/">
-            <img src="/images/Logo.svg" alt="logo" />
+            <img src="./images/Logo.svg" alt="logo" />
           </a>
           <div className="header__box">
             <Button label="Users" />

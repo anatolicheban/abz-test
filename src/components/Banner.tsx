@@ -8,7 +8,7 @@ const Banner = () => {
     <section className="banner">
       <Container>
         <div className="banner__inner">
-          <img src="/images/field.jpeg" alt="banner" />
+          <img src="./images/field.jpeg" alt="banner" />
           <div className="banner__content">
             <h1 className="banner__title">Test assignment for front-end developer</h1>
             <p className="banner__text">
