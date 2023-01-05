@@ -40,13 +40,13 @@ const Users = () => {
                 <Tooltip title={name} followCursor>
                   <p className="users__item-name">{formattedValue(name)}</p>
                 </Tooltip>
-                <Tooltip title={name} followCursor>
+                <Tooltip title={position} followCursor>
                   <p className="users__item-position">{formattedValue(position)}</p>
                 </Tooltip>
-                <Tooltip title={name} followCursor>
+                <Tooltip title={email} followCursor>
                   <p className="users__item-email">{formattedValue(email)}</p>
                 </Tooltip>
-                <Tooltip title={name} followCursor>
+                <Tooltip title={phone} followCursor>
                   <p className="users__item-phone">{formattedValue(phone)}</p>
                 </Tooltip>
               </li>
