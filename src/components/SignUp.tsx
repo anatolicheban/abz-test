@@ -10,7 +10,7 @@ import Input from "./UI/Input";
 import Radio from "./UI/Radio";
 
 const SignUp = () => {
-  const { data, isError, isLoading } = useGetPositionsQuery();
+  const { data, isError } = useGetPositionsQuery();
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");

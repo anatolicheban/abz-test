@@ -9,12 +9,9 @@ export const usersSlice = createSlice({
     addUsers: (state, action: PayloadAction<User[]>) => {
       return state.concat(action.payload);
     },
-    clearUsers: (state, action: PayloadAction<void>) => {
-      return [];
-    },
   },
 });
 
-export const { addUsers, clearUsers } = usersSlice.actions;
+export const { addUsers } = usersSlice.actions;
 
 export const getAllUsers = (state: RootState) => state.users;
