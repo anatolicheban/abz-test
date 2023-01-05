@@ -1,0 +1,39 @@
+@import '_vars.sass'
+
+.users
+  &__inner
+    display: flex
+    align-items: center
+    flex-direction: column
+  &__title
+    @include heading
+    text-align: center
+    margin: 9rem 0 3rem
+  &__list
+    width: 100%
+    display: grid
+    gap: 2rem
+    grid-template-columns: repeat(3, 1fr)
+    @media(max-width: 900px)
+      grid-template-columns: repeat(2, 1fr)
+      gap: 1rem
+    @media(max-width: 650px)
+      grid-template-columns: 1fr
+  &__item
+    display: flex
+    flex-direction: column
+    align-items: center
+    background-color: #fff
+    padding: 1.25rem
+    border-radius: 10px
+    img
+      object-fit: cover
+      width: 4.5rem
+      height: 4.5rem
+      border-radius: 50%
+    p
+      @include text
+  &__item-name
+    margin: 1.25rem 0
+  &__btn
+    margin-top: 3rem

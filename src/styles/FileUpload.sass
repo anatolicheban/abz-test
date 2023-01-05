@@ -1,0 +1,39 @@
+@import '_vars.sass'
+.upload
+  display: flex
+  align-items: stretch
+  max-width: 20rem
+  width: 100%
+  position: relative
+  input
+    display: none
+  button
+    padding: 0.875rem 1rem
+    border: 1px solid black
+    cursor: pointer
+    border-radius: .25rem 0 0 .25rem
+    background-color: #fff
+  div
+    border: 1px solid #D0CFCF
+    border-left: none
+    border-radius: 0 .25rem .25rem 0
+    width: 100%
+    display: flex
+    align-items: center
+    padding-left: 1rem
+    @include text
+    color: #7E7E7E
+  p
+    position: absolute
+    top: calc(100% + .25rem)
+    left: 1rem
+    font-size: .75rem
+    line-height: .9rem
+    color: #7E7E7E
+
+  &.error
+    div, button
+      border-color: #CB3D40
+      border-width: 2px
+    p
+      color: #cb3d40

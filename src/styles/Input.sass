@@ -1,0 +1,43 @@
+@import '_vars.sass'
+.input__box
+  max-width: 20rem
+  width: 100%
+  position: relative
+  p
+    position: absolute
+    top: calc(100% + .25rem)
+    left: 1rem
+    font-size: .75rem
+    line-height: .9rem
+    color: #7E7E7E
+
+  label
+    @include text
+    color: #7E7E7E
+    position: absolute
+    left: 1rem
+    top: 50%
+    transform: translate(0, -50%)
+    transition: .25s all
+    cursor: text
+  input
+    @include text
+    max-width: 18rem
+    width: 100%
+    padding: 1rem
+    border-radius: .25rem
+    border: 1px solid #D0CFCF
+    outline: none
+    &.error
+      border: 2px solid #CB3D40
+      & ~ label, & ~ p
+        color: #CB3D40
+
+.input__box input:focus ~ label,
+.input__box input:not(:placeholder-shown) ~ label
+  top: 0
+  left: .5rem
+  background-color: #fff
+  font-size: 0.75rem
+  cursor: default
+  padding: 0 .5rem

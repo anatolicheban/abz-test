@@ -1,0 +1,16 @@
+@import '_vars.sass'
+
+.button
+  padding: 0.25rem 1.5rem
+  background-color: $yellow
+  border-radius: 999px
+  @include text
+  border: none
+  transition: .5s all
+  cursor: pointer
+  &:hover
+    background-color: #FFE302
+  &:disabled
+    background-color: $gray
+    color: #fff
+    cursor: default
