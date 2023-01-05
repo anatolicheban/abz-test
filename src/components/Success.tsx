@@ -8,7 +8,7 @@ const Success = () => {
       <Container paddings>
         <div className="success__inner">
           <h2 className="success__title">User successfully registered</h2>
-          <img src="/images/success-image.svg" alt="success" />
+          <img src="./images/success-image.svg" alt="success" />
         </div>
       </Container>
     </div>
